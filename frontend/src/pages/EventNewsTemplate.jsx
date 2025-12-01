@@ -51,7 +51,7 @@ const EventNewsTemplate = () => {
             date_published: "",
             author: "",
             venue: "",
-            image: "/assests/images/Events/Startup_Ecosystem_and_Innovation_Mapping_Orientation_Meeting_with_NCR_City_Clusters.png",
+            image: "/assests/images/Events/NCR_City_Clusters_Mapping.png",
             content: "The NCR Startup Ecosystem and Innovation Mapping aims to identify the strengths, gaps, opportunities, and challenges of each city in the National Capital Region. This initiative will also serve as a valuable guide for leaders and stakeholders in enhancing their services relevant to the startup and innovation ecosystem, thereby strengthening their programs and improving their overall standing.\n\nPAMAMARISAN - April 24, 2024\nCAMANAVA + QC - May 17, 2024\nPAMAMA - May 28, 2024\nMUNTAPARLAS - June 11, 2024",
             slug: "startup-ecosystem-innovation-mapping-ncr-clusters"
         },
