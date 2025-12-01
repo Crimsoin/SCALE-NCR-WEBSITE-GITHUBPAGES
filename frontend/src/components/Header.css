@@ -1,0 +1,231 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    margin: 0;
+    background: #3D3D3D;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.header-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    letter-spacing: 0.5px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FFFFFF !important;
+    opacity: 0.8;
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+.nav-link.active {
+    color: #FFFFFF !important;
+}
+
+.nav-link.active::after {
+    width: 80%;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.burger-line.open:nth-child(1) {
+    transform: translateY(10.5px) rotate(45deg);
+}
+
+.burger-line.open:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-line.open:nth-child(3) {
+    transform: translateY(-10.5px) rotate(-45deg);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .burger-menu {
+        display: flex;
+    }
+    
+    .header-wrapper {
+        padding: 0 40px;
+    }
+    
+    .logo {
+        height: 45px;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 90px;
+        right: -100%;
+        width: 300px;
+        height: calc(100vh - 90px);
+        background-color: #3D3D3D;
+        flex-direction: column;
+        gap: 0;
+        padding: 40px 20px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+        transition: right 0.3s ease;
+        overflow-y: auto;
+    }
+    
+    .nav-links.open {
+        right: 0;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+        padding: 16px 20px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-link::after {
+        display: none;
+    }
+    
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header {
+        height: 70px;
+    }
+    
+    .header-wrapper {
+        padding: 0 20px;
+    }
+    
+    .logo {
+        height: 40px;
+    }
+    
+    .nav-links {
+        top: 70px;
+        height: calc(100vh - 70px);
+        width: 280px;
+    }
+    
+    .nav-link {
+        font-size: 15px;
+        padding: 14px 18px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .header {
+        height: 60px;
+    }
+    
+    .header-wrapper {
+        padding: 0 15px;
+    }
+    
+    .logo {
+        height: 35px;
+    }
+    
+    .burger-menu {
+        width: 26px;
+        height: 20px;
+    }
+    
+    .burger-line {
+        height: 2.5px;
+    }
+    
+    .nav-links {
+        top: 60px;
+        height: calc(100vh - 60px);
+        width: 100%;
+        padding: 30px 15px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+}

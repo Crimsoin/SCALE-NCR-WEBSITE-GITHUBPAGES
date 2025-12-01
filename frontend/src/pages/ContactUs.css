@@ -1,0 +1,406 @@
+/* ========================================
+   FONTS
+   ======================================== */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+.ContactUs-Hero {
+  background-color: rgb(229, 255, 0);
+  height: 794px;
+}
+
+.ContactUs-Hero-inner {
+  width: 100%;
+  margin-top: 90px;
+  background-color: #249CCC;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContactUs-Hero-left {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  height: 794px;
+}
+
+.ContactUs-Hero-right {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: #fff8e9;
+  height: 794px;
+}
+
+.ContactUs-Hero-image-wrapper {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #fff6ef 0%, #f6e8dc 100%);
+  color: #07688E;
+  font-weight: 700;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06), inset 0 2px 6px rgba(255,140,0,0.08);
+  position: relative;
+}
+
+.ContactUs-Hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ContactUs-Info-Overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 10;
+}
+
+.ContactUs-Info-Item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ContactUs-Icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.ContactUs-Social-Icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.ContactUs-Social-Link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  color: #000000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.ContactUs-Social-Link:hover {
+  transform: scale(1.1);
+  background-color: #f0f0f0;
+}
+
+.ContactUs-Social-Link svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.ContactUs-Form {
+  width: 850px;
+  max-width: 850px;
+  padding: 60px 20px;
+  box-sizing: border-box;
+
+}
+
+.ContactUs-Form-Title {
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: #3D3D3D;
+  margin-bottom: 40px;
+}
+
+.ContactUs-Form-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ContactUs-Form-Row {
+  display: flex;
+  gap: 30px;
+}
+
+.ContactUs-Form-Group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ContactUs-Form-Label {
+  font-size: 14px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #3D3D3D;
+  font-weight: 600;
+}
+
+.ContactUs-Form-Input,
+.ContactUs-Form-Textarea {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 2px solid #3D3D3D;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #3D3D3D;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.ContactUs-Form-Input:focus,
+.ContactUs-Form-Textarea:focus {
+  border-bottom-color: #EF7D22;
+}
+
+.ContactUs-Form-Textarea {
+  resize: none;
+  padding-top: 10px;
+}
+
+.ContactUs-Form-Textarea::placeholder {
+  color: #999;
+}
+
+.ContactUs-Form-Radio-Group {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.ContactUs-Radio-Label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3D3D3D;
+}
+
+.ContactUs-Radio-Label input[type="radio"] {
+  display: none;
+}
+
+.ContactUs-Radio-Custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #D1D1D1;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.ContactUs-Radio-Label input[type="radio"]:checked + .ContactUs-Radio-Custom {
+  border-color: #07688E;
+  background-color: #07688E;
+}
+
+.ContactUs-Radio-Label input[type="radio"]:checked + .ContactUs-Radio-Custom::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.ContactUs-Submit-Button {
+  align-self: flex-end;
+  background-color: #EF7D22;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 18px 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.ContactUs-Submit-Button:hover {
+  background-color: #B45910;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive - ContactUs-Hero */
+@media (max-width: 768px) {
+  .ContactUs-Hero {
+    height: auto;
+  }
+
+  .ContactUs-Hero-inner {
+    margin-top: 70px;
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  .ContactUs-Hero-left, .ContactUs-Hero-right {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .ContactUs-Hero-left {
+    height: 400px;
+  }
+
+  .ContactUs-Info-Overlay {
+    bottom: 20px;
+    left: 20px;
+    gap: 12px;
+  }
+
+  .ContactUs-Info-Item {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .ContactUs-Icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ContactUs-Social-Link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .ContactUs-Social-Link svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ContactUs-Hero-right {
+    padding: 40px 20px;
+  }
+
+  .ContactUs-Form {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .ContactUs-Form-Title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .ContactUs-Form-Container {
+    gap: 24px;
+  }
+
+  .ContactUs-Form-Row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ContactUs-Form-Radio-Group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ContactUs-Submit-Button {
+    width: 100%;
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ContactUs-Hero-inner {
+    margin-top: 60px;
+  }
+
+  .ContactUs-Hero-left {
+    height: 300px;
+  }
+
+  .ContactUs-Info-Overlay {
+    bottom: 16px;
+    left: 16px;
+    gap: 10px;
+  }
+
+  .ContactUs-Info-Item {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .ContactUs-Icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ContactUs-Social-Link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ContactUs-Social-Link svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .ContactUs-Hero-right {
+    padding: 30px 16px;
+  }
+
+  .ContactUs-Form-Title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .ContactUs-Form-Container {
+    gap: 20px;
+  }
+
+  .ContactUs-Form-Row {
+    gap: 20px;
+  }
+
+  .ContactUs-Form-Label {
+    font-size: 13px;
+  }
+
+  .ContactUs-Form-Input,
+  .ContactUs-Form-Textarea {
+    font-size: 13px;
+    padding: 12px 0;
+  }
+
+  .ContactUs-Submit-Button {
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+}
+
+.Top-Spacing {
+  background-color: #fff8e9;
+  height: 200px;
+}

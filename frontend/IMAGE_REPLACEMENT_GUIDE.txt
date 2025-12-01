@@ -1,0 +1,27 @@
+SCALE SLIDESHOW IMAGE REPLACEMENT GUIDE
+=====================================
+
+To update your slideshow with the SCALE event photos, please replace these files:
+
+📁 Location: frontend/src/assests/images/Home/
+
+🖼️ Files to replace:
+1. HOME-Slideshow-1.png → Replace with your "SCALING STARTUPS TOGETHER" banner image (first attachment)
+2. HOME-Slideshow-2.png → Replace with your team group photo with thumbs up (second attachment)  
+3. HOME-Slideshow-3.png → Replace with your panel discussion speakers image (third attachment)
+4. HOME-Slideshow-4.png → Replace with your networking event crowd image (fourth attachment)
+
+📋 Instructions:
+1. Save each of your SCALE event photos as PNG files
+2. Rename them to match the filenames above
+3. Copy them to the Home folder, replacing the existing files
+4. Recommended image size: 1920x1080 or similar wide format
+5. Keep file size under 1MB each for better performance
+
+✅ Current slideshow settings:
+- Slide 1: No text overlay (clean image display)
+- Slide 2: "BUILDING STRONG COMMUNITIES" overlay
+- Slide 3: "KNOWLEDGE SHARING SESSIONS" overlay  
+- Slide 4: "NETWORKING & COLLABORATION" overlay
+
+The slideshow will automatically use your new images once you replace the files!
