@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /backend/
+Disallow: /api/
+Allow: /
+
+# Sitemap
+Sitemap: https://www.scalencr.org/sitemap.xml
