@@ -15,6 +15,24 @@ import incubator5 from '../assests/images/Home/Incubator/Incubator_5.png';
 import incubator6 from '../assests/images/Home/Incubator/Incubator_6.png';
 import incubator7 from '../assests/images/Home/Incubator/Incubator_7.png';
 import incubator8 from '../assests/images/Home/Incubator/Incubator_8.png';
+import incubator9 from '../assests/images/Home/Incubator/Incubator_9.png';
+import member1 from '../assests/images/Home/Members/1.png';
+import member2 from '../assests/images/Home/Members/2.png';
+import member3 from '../assests/images/Home/Members/3.png';
+import member4 from '../assests/images/Home/Members/4.png';
+import member5 from '../assests/images/Home/Members/5.png';
+import member6 from '../assests/images/Home/Members/6.png';
+import member7 from '../assests/images/Home/Members/7.png';
+import member8 from '../assests/images/Home/Members/8.png';
+import member9 from '../assests/images/Home/Members/9.png';
+import member10 from '../assests/images/Home/Members/10.png';
+import member11 from '../assests/images/Home/Members/11.png';
+import member12 from '../assests/images/Home/Members/12.png';
+import member13 from '../assests/images/Home/Members/13.png';
+import member14 from '../assests/images/Home/Members/14.png';
+import member15 from '../assests/images/Home/Members/15.png';
+import member16 from '../assests/images/Home/Members/16.png';
+import member17 from '../assests/images/Home/Members/17.png';
 import { getFeaturedStartups } from '../services/startupsService';
 import { getHomePage } from '../services/pagesService';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -36,18 +54,7 @@ const Home = () => {
   }, []);
 
   // Static featured startups and consortium data
-  const staticFeaturedData = [
-    { id: 1, name: "TechNova Solutions", type: "startup", location: "Quezon City", image: null },
-    { id: 2, name: "EcoTech Manila", type: "startup", location: "Manila", image: null },
-    { id: 3, name: "HealthLink PH", type: "startup", location: "Makati", image: null },
-    { id: 4, name: "Smart Communications", type: "consortium", location: "Quezon City", image: null },
-    { id: 5, name: "AgriSmart Systems", type: "startup", location: "Pasig", image: null },
-    { id: 6, name: "Ayala Corporation", type: "consortium", location: "BGC Taguig", image: null },
-    { id: 7, name: "FinanceFlow", type: "startup", location: "BGC Taguig", image: null },
-    { id: 8, name: "Globe Telecom", type: "consortium", location: "BGC Taguig", image: null },
-    { id: 9, name: "CloudSecure PH", type: "startup", location: "Manila", image: null },
-    { id: 10, name: "Bank of the Philippine Islands", type: "consortium", location: "Makati", image: null }
-  ];
+  const staticFeaturedData = [];
 
   const fetchHomeContent = async () => {
     setLoading(true);
@@ -210,6 +217,68 @@ const Home = () => {
                 </div>
                 <div className="Home-Founding-Incubator-Logo">
                   <img src={incubator8} alt="Incubator 8" loading="lazy" />
+                </div>
+                <div className="Home-Founding-Incubator-Logo">
+                  <img src={incubator9} alt="Incubator 9" loading="lazy" />
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <section className="General-Members">
+            <div className="general-members-inner">
+              <h2>GENERAL MEMBERS</h2>
+              <div className="Home-General-Members-Boxes" aria-hidden="false">
+                <div className="Home-General-Member-Logo">
+                  <img src={member1} alt="General Member 1" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member2} alt="General Member 2" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member3} alt="General Member 3" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member4} alt="General Member 4" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member5} alt="General Member 5" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member6} alt="General Member 6" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member7} alt="General Member 7" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member8} alt="General Member 8" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member9} alt="General Member 9" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member10} alt="General Member 10" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member11} alt="General Member 11" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member12} alt="General Member 12" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member13} alt="General Member 13" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member14} alt="General Member 14" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member15} alt="General Member 15" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member16} alt="General Member 16" />
+                </div>
+                <div className="Home-General-Member-Logo">
+                  <img src={member17} alt="General Member 17" />
                 </div>
               </div>
             </div>

@@ -138,6 +138,133 @@
     }
 }
 
+/* General Members Section */
+.General-Members {
+    background-color: #fff8e9;
+    padding: 60px 0;
+    min-height: fit-content;
+}
+
+.general-members-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.general-members-inner h2 {
+    font-size: 25pt;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #3D3D3D;
+}
+
+.Home-General-Members-Boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Home-General-Member-Logo {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.Home-General-Member-Logo:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.member-placeholder {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* General Members Mobile Responsive */
+@media (max-width: 768px) {
+    .General-Members {
+        padding: 40px 0;
+    }
+    
+    .general-members-inner h2 {
+        font-size: 20pt;
+        margin-bottom: 30px;
+    }
+    
+    .Home-General-Members-Boxes {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 15px;
+        max-width: 600px;
+    }
+    
+    .Home-General-Member-Logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+    }
+    
+    .member-placeholder {
+        width: 70px;
+        height: 70px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .General-Members {
+        padding: 30px 0;
+    }
+    
+    .general-members-inner {
+        padding: 0 15px;
+    }
+    
+    .general-members-inner h2 {
+        font-size: 18pt;
+        margin-bottom: 25px;
+    }
+    
+    .Home-General-Members-Boxes {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 12px;
+    }
+    
+    .Home-General-Member-Logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 12px;
+    }
+    
+    .member-placeholder {
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+    }
+}
+
 .Home-Cta-1 {
     background-color: #FFFFFF;
     height: 576px;

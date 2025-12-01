@@ -47,6 +47,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 45px;
+    margin-bottom: 20px;
 }
 
 
@@ -211,6 +212,7 @@
 .About-Mission{
     background-color: white;
     height: fit-content;
+    min-height: 470px;
     width: 530px;
     border-radius: 15px;
     display: flex;
@@ -377,14 +379,14 @@
 }
 
 .About-Cta-1-right-content .cta1-title{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
 .About-Cta-1-right-content .cta1-desc{
-    font-size: 20px;
+    font-size: 19px;
     font-family: 'IBM Plex Mono', monospace;
     text-align: center;
     text-align: justify;

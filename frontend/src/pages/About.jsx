@@ -12,17 +12,6 @@ import incubator5 from '../assests/images/Home/Incubator/Incubator_5.png';
 import incubator6 from '../assests/images/Home/Incubator/Incubator_6.png';
 import incubator7 from '../assests/images/Home/Incubator/Incubator_7.png';
 import incubator8 from '../assests/images/Home/Incubator/Incubator_8.png';
-import teamMaria from '../assests/images/About/team-maria-santos.jpg';
-import teamJuan from '../assests/images/About/team-juan-delacruz.jpg';
-import teamSarah from '../assests/images/About/team-sarah-johnson.jpg';
-import teamMichael from '../assests/images/About/team-michael-chen.jpg';
-import teamAnna from '../assests/images/About/team-anna-rodriguez.jpg';
-import teamDavid from '../assests/images/About/team-david-park.jpg';
-import teamLisa from '../assests/images/About/team-lisa-wang.jpg';
-import teamCarlos from '../assests/images/About/team-carlos-mendoza.jpg';
-import teamJennifer from '../assests/images/About/team-jennifer-lee.jpg';
-import teamRoberto from '../assests/images/About/team-roberto-silva.jpg';
-import { getTeamMembers } from '../services/teamService';
 import { getAboutPage } from '../services/pagesService';
 import LoadingSpinner from '../components/LoadingSpinner';
 import SEO from '../components/SEO';
@@ -92,7 +81,12 @@ const About = () => {
         <div className="About-Hero-Content">
           <div className='About-Hero-Introduction'>
             <h1 className="About-Hero-Introduction-Title">{aboutContent?.whoAreWeTitle || 'WHO ARE WE'}</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+            <p>SCALE NCR (Strategic and Collaborative Alliance for Leveraging Ecosystem of Startups - National Capital Region) is a consortium formed in 2022 with the support of DOST-PCIEERD under the ReSEED Program. It was initiated by PCIEERD-supported Technology Business Incubators in the region and is  led by Miriam College - TBI, QBO Innovation, UPSCALE Innovation Lab, and DLSU-Animo Labs.
+            </p>
+            <p> </p><br />
+            <p>
+            SCALE NCR plays a pivotal role in promoting and accelerating the growth of startups within the National Capital Region (NCR) of the Philippines. The platform offers mentorship, funding opportunities, strategic partnerships, and specialized resources to support startups at various stages, aiming to cultivate investable ventures and enhance NCR’s standing in global startup ecosystem rankings.
+            </p>
           </div>
 
           <div className='About-Hero-Founding-TBI'>
@@ -132,11 +126,11 @@ const About = () => {
         <div className="About-Mission-Vision-Content">
           <div className='About-Mission'>
             <img src={MissionImg} alt="Mission" className="About-Mission-Image" loading="lazy" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <p>Strengthen the Philippine startup ecosystem to enable incubators and accelerators to develop investable startups. </p>
           </div>
           <div className='About-Vision'>
             <img src={VisionImg} alt="Vision" className="About-Vision-Image" loading="lazy" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <p>By 2028, SCALE-NCR envisions itself to be the leader in start-up initiatives, and entrepreneurial ecosystem in the country. With an end-view of producing globally competitive programs driven by science, technology, and innovation-based strategies, the SCALE-NCR is committed to establishing a robust collaboration with various start-up enablers in the country. </p>
           </div>
         </div>
       </section>    
@@ -152,10 +146,11 @@ const About = () => {
             <div className="About-Cta-1-right-content">
               <div className="cta1-title">WHAT IS THE RESEED PROGRAM ?</div>
               <p className="cta1-desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                To further strengthen the startup ecosystem of the country, the Department of Science and Technology – Philippine Council for Industry, Energy and Emerging Technology (DOST-PCIEERD) invested P120 million, through the Regional Startup Enabler for Ecosystem Development (ReSEED) Program, to support DOST PCIEERD-funded Technology Business Incubators (TBIs) in leading the establishment and formalization of startup ecosystem consortium in each region  
+                <br/>
+                <br/>
+                The program aims to reach partners and innovators in the regions in the Philippines to actively participate in the action to bolster and produce startups that are fundable by investors, as well as the government.   
+
               </p>
               <button className="cta1-button" onClick={() => window.location.href = '#'}>
                 visit the national website
@@ -163,118 +158,6 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section> 
-
-      <section className="Meet-The-Team">
-        <div className="Meet-The-Team-Content">
-          <div className="Meet-The-Team-Title">MEET THE TEAM</div>
-
-          <div className="Meet-The-Team-Card-Container">
-            <div className="Meet-The-Team-Card">
-              <div className="team-image-placeholder" 
-                   style={{backgroundImage: `url(${teamMaria})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-              </div>
-              <div className="team-meta">
-                <h3 className="team-role">EXECUTIVE DIRECTOR</h3>
-                <p className="team-name">Maria Santos</p>
-              </div>
-            </div>
-
-            <div className="Meet-The-Team-Card">
-              <div className="team-image-placeholder" 
-                   style={{backgroundImage: `url(${teamJuan})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-              </div>
-              <div className="team-meta">
-                <h3 className="team-role">PROGRAM MANAGER</h3>
-                <p className="team-name">Juan dela Cruz</p>
-              </div>
-            </div>
-
-            <div className="Meet-The-Team-Card">
-              <div className="team-image-placeholder" 
-                   style={{backgroundImage: `url(${teamSarah})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-              </div>
-              <div className="team-meta">
-                <h3 className="team-role">STARTUP MENTOR</h3>
-                <p className="team-name">Sarah Johnson</p>
-              </div>
-            </div>
-
-            <div className="Meet-The-Team-Card">
-              <div className="team-image-placeholder" 
-                   style={{backgroundImage: `url(${teamMichael})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-              </div>
-              <div className="team-meta">
-                <h3 className="team-role">BUSINESS ADVISOR</h3>
-                <p className="team-name">Michael Chen</p>
-              </div>
-            </div>
-
-            <div className="Meet-The-Team-Card">
-              <div className="team-image-placeholder" 
-                   style={{backgroundImage: `url(${teamAnna})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-              </div>
-              <div className="team-meta">
-                <h3 className="team-role">OPERATIONS COORDINATOR</h3>
-                <p className="team-name">Anna Rodriguez</p>
-              </div>
-            </div>
-
-            <div className="Meet-The-Team-Card">
-              <div className="team-image-placeholder" 
-                   style={{backgroundImage: `url(${teamDavid})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-              </div>
-              <div className="team-meta">
-                <h3 className="team-role">TECHNOLOGY LEAD</h3>
-                <p className="team-name">David Park</p>
-              </div>
-            </div>
-
-            <div className="Meet-The-Team-Card">
-              <div className="team-image-placeholder" 
-                   style={{backgroundImage: `url(${teamLisa})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-              </div>
-              <div className="team-meta">
-                <h3 className="team-role">MARKETING SPECIALIST</h3>
-                <p className="team-name">Lisa Wang</p>
-              </div>
-            </div>
-
-            <div className="Meet-The-Team-Card">
-              <div className="team-image-placeholder" 
-                   style={{backgroundImage: `url(${teamCarlos})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-              </div>
-              <div className="team-meta">
-                <h3 className="team-role">FINANCE MANAGER</h3>
-                <p className="team-name">Carlos Mendoza</p>
-              </div>
-            </div>
-
-            <div className="Meet-The-Team-Card">
-              <div className="team-image-placeholder" 
-                   style={{backgroundImage: `url(${teamJennifer})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-              </div>
-              <div className="team-meta">
-                <h3 className="team-role">RESEARCH ANALYST</h3>
-                <p className="team-name">Jennifer Lee</p>
-              </div>
-            </div>
-
-            <div className="Meet-The-Team-Card">
-              <div className="team-image-placeholder" 
-                   style={{backgroundImage: `url(${teamRoberto})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-              </div>
-              <div className="team-meta">
-                <h3 className="team-role">COMMUNITY MANAGER</h3>
-                <p className="team-name">Roberto Silva</p>
-              </div>
-            </div>
-          </div>
-            
-        </div>
-
-
-
       </section>       
 
     </div>
